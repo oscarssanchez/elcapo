@@ -4,8 +4,8 @@ add_theme_support( 'menus' );
 //-- Add Styles: bootstrap, googlefonts, fontawesome --//
 function elcapo_styles() {
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
-	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700' );
+	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css', array(), time() );
 }
 add_action( 'wp_enqueue_scripts', 'elcapo_styles');
