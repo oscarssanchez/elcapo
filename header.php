@@ -41,5 +41,5 @@
 	<div class="row">
 		<!--Header -->
 		<div class="col-md-12 header-title">
-			<a href="<?php get_site_url(); ?>"><h1 title> <?php bloginfo(); ?></h1></a>
+			<a href="<?php get_site_url(); ?>"><h1 class="title"> <?php bloginfo(); ?></h1></a>
 		</div>
