@@ -20,34 +20,133 @@ body {
 
 /*navbar */
 .navbar {
-    margin-bottom: 0px;
+    margin-bottom: 40px;
+    border-color: transparent;
 }
 .navbar-brand {
     font-weight: 700;
     font-size: 200%;
 }
-.navbar-default {
-    background-color: #eeeeee;
+
+@media screen and (max-width: 480px) {
+    .menu-menu-1-container {
+        margin-top: 0px;
+        padding-right: 0;
+    }
+
+    .menu-item {
+        margin-left: 0px;
+    }
 }
+
+.menu-menu-1-container {
+    padding-top:50px;
+    padding-right: 4em;
+}
+
+.menu-item {
+    margin-left: 35px;
+}
+
+
+.navbar-logo {
+    margin-left: 10px;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /*Header CSS */
+
+.header-date {
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.header {
+    background-image: url("");
+}
+
+.header-title {
+    padding-top: 50px;
+    padding-bottom: 2em;
+    background-color: transparent;
+}
 
 .header-title a {
     text-decoration: none;
 }
 
-.header-title {
-    background-color: #333333;
-    padding-bottom: 70px;
-    padding-top: 10px;
-}
 .header-title h1 {
     font-weight: 700;
-    font-size: 300%;
-    margin-bottom: 0px;
+    font-size: 280%;
+    margin-bottom: 20px;
     margin-top: 0px;
     color: #fff;
 
 }
+
+
+.header-separator {
+    border: 2.5px solid #3d69e7;
+    width: 5%;
+    align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*Blog-Loop-Archive */
+
+.blog-post-title {
+    font-weight: 800;
+}
+
+.blog-post-link a:-webkit-any-link:hover {
+    color: #3d69e7;
+}
+
+.blog-post-link:-webkit-any-link {
+    color: #555;
+}
+
+a:-webkit-any-link:hover {
+    color: #3d69e7;
+}
+
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #959595;
+}
+
+.border-loopbox {
+    border-right: 1px solid #e2e2e2;
+}
+
+.post-categories {
+    list-style-type: none;
+    padding:0;
+    font-weight: 800;
+}
+
+.excerpt {
+    font-size 19px;
+}
+
 
 /*Division "Thanks for visiting" */
 .division {
@@ -99,10 +198,12 @@ body {
 .post-date {
     font-weight: 700;
     color: #a2a2a2;
+    font-size: 12px;
+    margin-top: 20px;
 }
 
 .post-row {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .post-author {
@@ -153,6 +254,27 @@ body {
 .comment-button {
     margin-top: 10px;
     margin-bottom: 30px;
+    background-color: #3d69e7;
+    border-color: rgba(216,71,101,0);
+    border-radius: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comment-button:hover {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(66, 111, 255, 0.85);
+    border-color: rgba(216,71,101,0);
+    border-radius: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fn {
@@ -177,4 +299,49 @@ body {
     margin-bottom: 30px;
     margin-top: 30px;
     letter-spacing: 1px;
+}
+
+/*Contact Jumbotron  */
+
+.contact-jumbotron {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #1b4bd6;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url("http://local.wordpress.test/wp-content/uploads/2017/12/jumbotron.png");
+}
+
+.btn-transparent-alt {
+    background-color: rgba(216,71,101,.6);
+    border-color: rgba(216,71,101,0);
+    border-radius: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-transparent-alt:-webkit-any-link {
+    color: #fff;
+}
+
+.btn-transparent-alt:-webkit-any-link:hover {
+    color: #fff;
+    background-color: #d84765;
+    border-color: #d84765;
+}
+
+
+/*Page */
+
+.page-title {
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align:center;
 }
