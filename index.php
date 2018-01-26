@@ -1,5 +1,5 @@
 <?php
-	get_header(); ?>
+get_header(); ?>
 <div class="container-fluid">
 	<div class="row">
 	<?php
@@ -17,12 +17,12 @@
 				<?php the_post_thumbnail( 'thumbnail' ); ?>
 				<?php the_excerpt(); ?>
 			</div>
-		<?php endwhile; else : ?>
-		<p><?php esc_html( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<?php endwhile;?>
+	<?php else : ?>
+		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'elcapo' ); ?></p>
 	<?php endif; ?>
 	</div>
 </div>
 <?php
-	get_template_part( 'template-parts/contact', 'all' );
+get_template_part( 'template-parts/contact', 'all' );
 get_footer();
-
